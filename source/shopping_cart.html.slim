@@ -1,0 +1,56 @@
+#shopping-cart.left-content.inl-bl
+  h1 Оформление заказа
+  h2 Выбор платёжной системы
+  #payment-systems
+    .system.inl-bl.inactive#yandex-pay
+      img src='images/anna/yandex_pay.png'
+      span Яндекс.Деньги
+    .system.inl-bl.inactive#card-pay
+      img src='images/anna/card_pay.png'
+      span Visa / Mastercard
+    .system.inl-bl.inactive#mobile-pay
+      img src='images/anna/mobile_pay.png'
+      span С мобильного
+  h2 Товары в заказе
+  table#order-table cols='6' cellpadding='0' cellspacing='0'
+    tr
+      th style="width: 270px" Товар
+      th style="width: 80px"  Скидка
+      th style="width: 90px"  Цена
+      th style="width: 90px" Количество
+      th style="width: 80px"  Сумма
+      th style="width: 44px"
+    tr
+      td Книга Мир Китайской Метафизики
+      td 10%
+      td 399 руб.
+      td
+        input min='1' max='9' value='1'
+      td 399руб
+      td
+        img src='images/anna/table_star.png' title='в отложенное'
+    tr
+      td Подписка на 1 месяц
+      td
+      td 399 руб.
+      td
+        input min='1' max='9' value='1'
+      td 399 руб.
+      td
+        img src='images/anna/table_star.png' title='в отложенное'
+    tr
+      td colspan='6' Итого: 998 руб.
+
+  h2 Комментарий к заказу
+  textarea.with_shadow
+  #buttons
+    a.inl-bl href='#'
+    a.inl-bl href='#'
+
+
+
+
+
+
+
+

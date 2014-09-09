@@ -1,7 +1,7 @@
 html
   head
     meta charset='utf-8'
-      link rel='stylesheet' href='stylesheets/anna/anna.css'
+      link rel='stylesheet' href='stylesheets/anna/all.css'
       script type='text/javascript' src='javascripts/anna/all.js'
 
   body
@@ -36,10 +36,47 @@ html
               img src='images/anna/search-icon.png'
             input.search type='text'
 
-
-
     .content
-      == yield
+      .promo
+        .container
+          .left-block
+            img.anna_big src='images/anna/anna_photo.png'
+          .center-block
+            img.logo src='images/anna/logo.jpg'
+
+            .info_block
+              p Ипполит Матвеевич испуганно замолчал.
+                  Искатель Пфеферкорнов недоуменно подождал
+                  ответа и, не дождавшись его, пополз дальше.
+
+              a.img href='#'
+                img src='images/anna/button_buy_book.png'
+
+
+          .right-block
+            a.img href='#'
+              img src='images/anna/button-lk.jpg'
+            br
+            a.img href='#'
+              img src='images/anna/button-skype.jpg'
+            br
+            .fen-shui.text-center
+              a.img href='#'
+                img src='images/anna/img-fen-shui.png'
+              br
+              div Консультант <br> Международного <br> форума <br> фэн-шуй
+
+        .footer
+          .container
+            ' Анна Почернина - консультант международного форума фэн-шуй, специалист по китайским наукам
+            a href='#'
+              ' Далее
+              img src='images/anna/link-arrow.png'
+
+      #content-container
+        == yield
+        = partial 'partials/right_block'
+
     #footer
       .container
         .block_d4

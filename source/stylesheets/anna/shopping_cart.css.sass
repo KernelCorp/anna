@@ -1,0 +1,90 @@
+#shopping-cart
+  #payment-systems
+    font-size: 0
+    margin-bottom: 60px
+    .system
+      position: relative
+      height: 80px
+      width: 205px
+      margin-right: 21px
+      cursor: pointer
+      &:last-child
+        margin-right: 0
+      img
+        position: absolute
+        left: 20px
+        top: 15px
+      &:nth-child(2)
+        img
+          left: 15px
+      &:last-child
+        img
+          top: 13px
+      span
+        font-size: 16px
+        color: #65686d
+        line-height: 78px
+        margin-left: 70px
+    .inactive
+      border: 1px solid #e4e4e4
+      border-radius: 1px
+    .active
+      border: 1px solid #ff5511
+      border-radius: 3px
+
+  #order-table
+    width: 657px
+    border: 1px solid #e4e4e4
+    background-image: url(../../images/anna/table_header.png)
+    background-repeat: no-repeat
+    font-size: 14px
+    color: #3b3e43
+    text-align: center
+    margin-bottom: 65px
+    tr
+      border-bottom: 1px solid #e4e4e4
+      height: 60px
+      &:first-child
+        height: 58px
+      &:last-child
+        height: 66px
+        font-size: 18px
+        td
+          text-align: right !important
+          padding-right: 55px
+      th
+        color: #939ca1
+        font-weight: normal
+        text-align: center
+      td
+        input
+          height: 28px
+          width: 37px
+          padding-left: 12px
+      td, th
+        &:first-child
+          text-align: left
+          padding-left: 25px
+
+  textarea
+    height: 175px
+    width: 655px
+    margin-top: -5px
+    outline: none
+    border: 1px solid #e4e4e4
+  #buttons
+    margin: 35px 0
+    a
+      height: 48px
+      width: 176px
+      border: none
+      &:first-child
+        background-image: url(../../images/anna/delay_order_button.png)
+        margin-left: 280px
+        margin-right: 25px
+      &:last-child
+        background-image: url(../../images/anna/make_order_button.png)
+
+
+
+
