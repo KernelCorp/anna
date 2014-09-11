@@ -1,0 +1,97 @@
+#grid.left-content.inl-bl
+  h1 Вы смотрели
+  .inner-menu
+    a.menu-item.inl-bl.white-gradient.active href='#'
+      img src='images/anna/books_menu_icon.png'
+      | Книги
+    a.menu-item.inl-bl.white-gradient href='#'
+      img src='images/anna/audio_menu_icon.png'
+      | Аудио
+    a.menu-item.inl-bl.white-gradient href='#'
+      img src='images/anna/video_menu_icon.png'
+      | Видео
+    a.menu-item.inl-bl.white-gradient href='#'
+      img src='images/anna/souvenir_menu_icon.png'
+      | Сувениры
+
+  #filters
+    a href='#'
+      img src='images/anna/view_list.png'
+    a href='#'
+      img src='images/anna/view_thumb.png'
+    a#hits.inl-bl href='#' Хиты продаж
+    a#new.inl-bl href='#' Новинки
+    span Цена от:
+    input.with_border.with_shadow placeholder='1000 руб.'
+    span до
+    input.with_border.with_shadow placeholder='10000 руб.'
+
+  #books-container
+    .book.inl-bl
+      img src='images/anna/grid_pic_1.jpg'
+      .title Символические звезды шэнь и ша в бацзы
+      .price
+        | 599 <span>руб.</span>
+      a.buy-book.button-font href='#' Купить книгу
+      a.favorite
+        img src='images/anna/red_star.png'
+      a.more href='#' Подробнее
+
+    .book.inl-bl
+      img src='images/anna/grid_pic_2.jpg'
+      .title Символические звезды шэнь и ша в бацзы
+      .price
+        | 599 <span>руб.</span>
+      a.buy-book.button-font href='#' Купить книгу
+      a.favorite
+        img src='images/anna/red_star.png'
+      a.more href='#' Подробнее
+
+    .book.inl-bl
+      img src='images/anna/grid_pic_1.jpg'
+      .title Символические звезды шэнь и ша в бацзы
+      .price
+        | 599 <span>руб.</span>
+      a.buy-book.button-font href='#' Купить книгу
+      a.favorite
+        img src='images/anna/red_star.png'
+      a.more href='#' Подробнее
+
+    .book.inl-bl
+      img src='images/anna/grid_pic_1.jpg'
+      .title Символические звезды шэнь и ша в бацзы
+      .price
+        | 599 <span>руб.</span>
+      a.buy-book.button-font href='#' Купить книгу
+      a.favorite
+        img src='images/anna/red_star.png'
+      a.more href='#' Подробнее
+
+    .book.inl-bl
+      img src='images/anna/grid_pic_2.jpg'
+      .title Символические звезды шэнь и ша в бацзы
+      .price
+        | 599 <span>руб.</span>
+      a.buy-book.button-font href='#' Купить книгу
+      a.favorite
+        img src='images/anna/red_star.png'
+      a.more href='#' Подробнее
+
+    .book.inl-bl
+      img src='images/anna/grid_pic_1.jpg'
+      .title Символические звезды шэнь и ша в бацзы
+      .price
+        | 599 <span>руб.</span>
+      a.buy-book.button-font href='#' Купить книгу
+      a.favorite
+        img src='images/anna/red_star.png'
+      a.more href='#' Подробнее
+
+  = partial 'partials/pagination'
+
+coffee:
+  $(document).ready ->
+    $('#right-block li:nth-child(5) a').addClass('right-active')
+    return
+
+

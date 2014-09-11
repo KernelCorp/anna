@@ -1,0 +1,49 @@
+#blog.left-content.inl-bl
+
+  .blog-1.blog
+    .right
+      .title Женская красота в бацзы
+      .text
+        | Образная форма, цвет и т. д. для коррекции тех или иных влияний появилась вследствие персонификации используемых.
+      a.button.button-font href='#' Подробнее
+
+  .blog-2.blog
+    img src='images/anna/blog_pic_2.png'
+    .right.inl-bl
+      .title Искусство пробудить дракона
+      .info Опубликовано 24.08.2014      2 комментария
+      .text
+        | Кроме того, фэншуй не использует так называемые зоны «любви», «богатства», «семьи», «здоровья»...
+      a.button.button-font href='#' Подробнее
+
+  .blog-3.blog.with_border
+    img src='images/anna/blog_deny.png'
+    .center.inl-bl
+      .title Закрытая запись
+      .text Закрытые записи доступны только при оплате подписки
+    .right.inl-bl
+      .price
+        | 59 <span>руб/мес</span>
+      a.button.button-font href='#' Получить доступ
+
+  .blog-2.blog
+    img src='images/anna/blog_pic_3.jpg'
+    .right.inl-bl
+      .title Женская красота в бацзы
+      .info Опубликовано 24.08.2014      2 комментария
+      .text
+        | Кроме того, фэншуй не использует так называемые зоны «любви», «богатства», «семьи», «здоровья»...
+      a.button.button-font  href='#'Подробнее
+
+  = partial '/partials/pagination'
+
+coffee:
+  $(document).ready ->
+    $('#right-block li:nth-child(5) a').addClass('right-active')
+    return
+
+
+
+
+
+

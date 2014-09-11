@@ -26,6 +26,8 @@ with_layout :anna do
   page '/viewed.html'
   page '/promo.html'
   page '/product_card.html'
+  page '/blog.html'
+  page '/grid.html'
 end
 
 

@@ -1,0 +1,101 @@
+#grid
+  .inner-menu
+    .menu-item
+      width: 164px !important
+
+  #filters
+    font-family: 'PT Sans Bold'
+    font-size: 14px
+    height: 30px
+    color: #3b3e43
+    margin-bottom: 40px
+    a
+      border: none
+      margin-right: 15px
+      img
+        vertical-align: bottom
+        margin-bottom: 4px
+      &:first-child
+        img
+          margin-bottom: 5px
+    #hits
+      height: 27px
+      width: 114px
+      color: #373a3f
+      background: #eeeeee
+      text-align: center
+      border-radius: 20px
+      border: none
+      line-height: 27px
+      margin-right: 15px
+    #new
+      height: 27px
+      width: 90px
+      color: #b9b8b8
+      background: #f3f3f3
+      text-align: center
+      border-radius: 20px
+      line-height: 27px
+      margin-right: 35px
+    span
+      margin: 0 15px
+    input
+      width: 100px
+      height: 30px
+      font-size: 14px
+      padding-left: 15px
+    input::-webkit-input-placeholder
+      font-family: 'PT Sans Italic'
+    input:-moz-placeholder
+      font-family: 'PT Sans Italic'
+      opacity: 1
+
+  #books-container
+    .book
+      position: relative
+      width: 200px
+      height: 380px
+      margin: 0 30px 45px 0
+      &:nth-child(3n)
+        margin-right: 0
+      >img
+        width: 100%
+        height: 218px
+      .title
+        font-family: 'PT Sans Bold'
+        font-size: 16px
+        margin: 10px 0
+        line-height: 1
+      .price, .buy-book, .more, .favorite
+        position: absolute
+        left: 0
+      .price
+        font-family: 'PT Sans Bold'
+        font-size: 24px
+        bottom: 80px
+        span
+          font-size: 14px
+      .buy-book
+        display: block
+        height: 33px
+        width: 124px
+        line-height: 34px
+        font-size: 12px
+        text-align: center
+        background-image: url(../../images/anna/grid_arrow_button.png)
+        bottom: 35px
+      .favorite
+        border: none
+        bottom: 0
+        cursor: pointer
+      .more
+        font-size: 14px
+        border: none
+        text-decoration: underline
+        color: #373a3f
+        cursor: pointer
+        bottom: 0
+        left: 23px
+
+  #pagination-container
+    margin-top: -10px

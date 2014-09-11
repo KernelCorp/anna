@@ -13,12 +13,53 @@
       img src='images/anna/souvenir_menu_icon.png'
       | Сувениры
 
+  .card
+    img src='images/anna/book_pic_1.jpg'
+    .right.inl-bl
+      .title Символические звезды шэнь и ша в бацзы
+      .text
+        | Образная форма, цвет и т. д. для коррекции тех или иных влияний появилась вследствие персонификации
+          используемых в Китае обозначений энергии: земли, металла, воды, дерева и огня.
+      .price
+        | 15000 <span>руб.</span>
+      .format
+        | Формат PDF <br>
+          Дата выпуска Февраль 2014
+      .button.button-font Купить книгу
 
+  h1 Фрагмент
+  .text
+    | Фэншуй предполагает существование потоков энергии ци (подобной ветру) через дома, комнаты и участки. Так
+      энергия пронизывает всё — человека, природу и вещи, — то можно только определять её присутствие в конкретном
+      месте или человеке. Она не зависит от человека и времени — поэтому и называется Небесной Судьбой (небесным счастьем).
+  h1 2 комментария
+  #comments
+    .comment
+      img src='images/anna/comment_1.jpg'
+      .right.inl-bl
+        .name-date
+          | Ярослав Бирюза 22.08.2014
+        .text
+          | Она не зависит от человека и времени — поэтому и называется Небесной Судьбой (небесным счастьем).
+      a.write-answer href='#' Ответить
+    .comment.answer
+      img src='images/anna/comment_2.jpg'
+      .right.inl-bl
+        .name-date
+          | Ярослав Бирюза 22.08.2014
+        .text
+          | Земная энергия меняется, как меняется сама Земля. Она может создавать гармоничные или негармоничные структуры
+            во времени и пространстве. Так как энергия в принципе нематериальна, то не пустить «вредоносное ци» в дом нельзя.
+      a.write-answer href='#' Ответить
 
+  h1 Оставить комментарий
+  input.with_border.with_shadow placeholder='Ваше имя'
+  textarea.with_border.with_shadow placeholder='Комментарий'
+  a.button.button-font Отправить
 
-  coffee:
-    $(document).ready ->
-      $('#right-block li:nth-child(3) a').addClass('right-active')
-      return
+coffee:
+  $(document).ready ->
+    $('#right-block li:nth-child(5) a').addClass('right-active')
+    return
 
 
