@@ -1,0 +1,45 @@
+#viewed.left-content.inl-bl
+  h1 Вы смотрели
+  .inner-menu
+    a.menu-item.inl-bl.white-gradient.active href='#'
+      img src='images/anna/books_menu_icon.png'
+      | Книги
+    a.menu-item.inl-bl.white-gradient href='#'
+      img src='images/anna/audio_menu_icon.png'
+      | Аудио
+    a.menu-item.inl-bl.white-gradient href='#'
+      img src='images/anna/video_menu_icon.png'
+      | Видео
+    a.menu-item.inl-bl.white-gradient href='#'
+      img src='images/anna/souvenir_menu_icon.png'
+      | Сувениры
+
+  #books-container
+    .book.inl-bl
+      img src='images/anna/book_pic_1.jpg'
+      a.buy-book.button-font href='#' Купить книгу
+    .book.inl-bl
+      img src='images/anna/book_pic_2.jpg'
+      a.buy-book.button-font href='#' Купить книгу
+    .book.inl-bl
+      img src='images/anna/book_pic_1.jpg'
+      a.buy-book.button-font href='#' Купить книгу
+    .book.inl-bl
+      img src='images/anna/book_pic_1.jpg'
+      a.buy-book.button-font href='#' Купить книгу
+    .book.inl-bl
+      img src='images/anna/book_pic_1.jpg'
+      a.buy-book.button-font href='#' Купить книгу
+    .book.inl-bl
+      img src='images/anna/book_pic_2.jpg'
+      a.buy-book.button-font href='#' Купить книгу
+
+  = partial 'partials/pagination'
+
+coffee:
+  $(document).ready ->
+    $('#right-block li:nth-child(3) a').addClass('right-active')
+    return
+
+
+

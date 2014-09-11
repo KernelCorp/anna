@@ -1,0 +1,50 @@
+#history.left-content.inl-bl
+  h1 Отложенные заказы
+
+  .order
+    .title
+      | Заказ <span id='order-num'>№1</span> от <span id='order-date'>28.08.2014</span>
+    .text
+      | Сумма к оплате: <span id='price'>5999 руб.</span> <br>
+          Статус оплаты: <span id='status'>Оплачено</span> <br>
+          Способ оплаты: <span id='pay-type'>Яндекс.Деньги</span> <br>
+          Состав заказа: <br>
+          <span>1. Книга Мир Китайской Метафизики     1 шт.</span> <br>
+          <span>2. Подписка на 1 месяц     1 шт.</span>
+    a.cancel-button.with_border href='#' Отменить заказ
+    a.repeat-button href='#'
+
+  .order
+    .title
+      | Заказ <span id='order-num'>№2</span> от <span id='order-date'>28.08.2014</span>
+    .text
+      | Сумма к оплате: <span id='price'>5999 руб.</span> <br>
+            Статус оплаты: <span id='status'>Оплачено</span> <br>
+            Способ оплаты: <span id='pay-type'>Яндекс.Деньги</span> <br>
+            Состав заказа: <br>
+            <span>1. Книга Мир Китайской Метафизики     1 шт.</span> <br>
+            <span>2. Подписка на 1 месяц     1 шт.</span>
+    a.cancel-button.with_border href='#' Отменить заказ
+    a.repeat-button href='#'
+
+  .order
+    .title
+      | Заказ <span id='order-num'>№3</span> от <span id='order-date'>28.08.2014</span>
+    .text
+      | Сумма к оплате: <span id='price'>5999 руб.</span> <br>
+            Статус оплаты: <span id='status'>Оплачено</span> <br>
+            Способ оплаты: <span id='pay-type'>Яндекс.Деньги</span> <br>
+            Состав заказа: <br>
+            <span>1. Книга Мир Китайской Метафизики     1 шт.</span> <br>
+            <span>2. Подписка на 1 месяц     1 шт.</span>
+    a.cancel-button.with_border href='#' Отменить заказ
+    a.repeat-button href='#'
+
+  = partial 'partials/pagination'
+
+coffee:
+  $(document).ready ->
+    $('#right-block li:nth-child(2) a').addClass('right-active')
+    return
+
+

@@ -20,6 +20,12 @@ with_layout :anna do
   page '/anna.html'
   page '/shopping_cart.html'
   page '/consultation_personal.html'
+  page '/consultation_all.html'
+  page '/history.html'
+  page '/postponed.html'
+  page '/viewed.html'
+  page '/promo.html'
+  page '/product_card.html'
 end
 
 

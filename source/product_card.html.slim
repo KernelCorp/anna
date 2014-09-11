@@ -1,0 +1,24 @@
+#product-card.left-content.inl-bl
+  .inner-menu
+    a.menu-item.inl-bl.white-gradient.active href='#'
+      img src='images/anna/books_menu_icon.png'
+      | Книги
+    a.menu-item.inl-bl.white-gradient href='#'
+      img src='images/anna/audio_menu_icon.png'
+      | Аудио
+    a.menu-item.inl-bl.white-gradient href='#'
+      img src='images/anna/video_menu_icon.png'
+      | Видео
+    a.menu-item.inl-bl.white-gradient href='#'
+      img src='images/anna/souvenir_menu_icon.png'
+      | Сувениры
+
+
+
+
+  coffee:
+    $(document).ready ->
+      $('#right-block li:nth-child(3) a').addClass('right-active')
+      return
+
+
