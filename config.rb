@@ -16,8 +16,10 @@ set :slim, { :pretty => true, :format => :html5 }
 #page '/index.html', layout: :rack
 
 #PROJECTS
+
+page 'anna.html', layout: 'anna_main'
+
 with_layout :anna do
-  page '/anna.html'
   page '/shopping_cart.html'
   page '/consultation_personal.html'
   page '/consultation_all.html'
@@ -29,7 +31,6 @@ with_layout :anna do
   page '/blog.html'
   page '/grid.html'
 end
-
 
 # Per-page layout changes:
 #
